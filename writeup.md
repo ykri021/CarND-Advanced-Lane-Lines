@@ -19,12 +19,12 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./camera_cal_output/undistorted_images/undistorted_calibration1.jpg "Undistorted"
-[image2]: ./output_images/undistorted_images/test2.jpg "Road Transformed"
-[image3]: ./output_images/thresholded_images/test2.jpg "Binary Example"
-[image4]: ./output_images/warped_images/test2.jpg "Warp Example"
+[image1]: ./writeup_images/Undistorted.jpg "Undistorted"
+[image2]: ./writeup_images/Undistorted_Road.jpg "Road Transformed"
+[image3]: ./writeup_images/Thresholded.jpg "Binary Example"
+[image4]: ./writeup_images/Warped.jpg "Warp Example"
 [image5]: ./examples/color_fit_lines.jpg "Fit Visual"
-[image6]: ./output_images/processed_images/test2.jpg "Output"
+[image6]: ./writeup_images/Processed.jpg "Output"
 [video1]: ./project_video_output.mp4 "Video"
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/571/view) Points
@@ -122,7 +122,7 @@ Here is an example of my result on a test image:
 
 #### 1. Provide a link to your final video output.  Your pipeline should perform reasonably well on the entire project video (wobbly lines are ok but no catastrophic failures that would cause the car to drive off the road!).
 
-Here's a [link to my video result](./project_video.mp4)
+Here's a [link to my video result][video1]
 
 ---
 
