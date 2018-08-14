@@ -36,7 +36,6 @@ get_ipython().run_line_magic('matplotlib', 'inline')
 
 # # 1 - Caliberation
 # 
-# We can observe that there are 9 corners in a row and 6 corners in a column.
 
 # In[2]:
 
@@ -168,16 +167,13 @@ cv2.destroyAllWindows()
 
 # # 3 - Gradients and color transforms
 # 
-# We use 2 kinds of gradient thresholds:
+# I used 5 kinds of gradient thresholds:
 # 
 # 1. Along the X and Y axis.
 # 2. Directional gradient with thresholds of 0.7 and 1.3 degrees.
 # 3. Magnitude of the Gradient with thresholds of 30 and 100.
-# 
-# We then apply the following color thresholds:
-# 
-# 1. L channel threshold so that we don't take into account edges generated due to shadows.
-# 2. S channel threshold since it picks up the lines well.
+# 4. S channel threshold since it picks up the lines well.
+# 5. L channel threshold.
 
 # In[7]:
 
