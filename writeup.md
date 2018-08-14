@@ -60,13 +60,14 @@ To demonstrate this step, I will describe how I apply the distortion correction 
 
 #### 2. Describe how (and identify where in your code) you used color transforms, gradients or other methods to create a thresholded binary image.  Provide an example of a binary image result.
 
-I used a combination of color and gradient thresholds to generate a binary image. (I did this in lines # through # in my code in `Advanced-Lane-Lines.ipynb` in the function`get_thresholded_image()`) Here's an example of my output for this step.  (note: this is not actually from one of the test images)
+I used a combination of color and gradient thresholds to generate a binary image. (I did this in the 7th code cell of the IPython notebook (of the  function`get_thresholded_image()`) Here's an example of my output for this step.  (note: this is not actually from one of the test images)
 
 ![alt text][image3]
 
 #### 3. Describe how (and identify where in your code) you performed a perspective transform and provide an example of a transformed image.
 
-The code for my perspective transform includes a function called `warper()`, which appears in lines 1 through 8 in the file `example.py` (output_images/examples/example.py) (or, for example, in the 3rd code cell of the IPython notebook).  The `warper()` function takes as inputs an image (`img`), as well as source (`src`) and destination (`dst`) points.  I chose the hardcode the source and destination points in the following manner:
+The code for my perspective transform includes a function called `get_warped_image()`,(in the 9th code cell of the IPython notebook).  The `get_warped_image()` function takes as inputs an image (`img`).  
+I chose the hardcode the source and destination points in the following manner:
 
 
 
@@ -91,11 +92,7 @@ Then I did some other stuff and fit my lane lines with a 2nd order polynomial ki
 
 #### 5. Describe how (and identify where in your code) you calculated the radius of curvature of the lane and the position of the vehicle with respect to center.
 
-I did this in lines # through # in my code in `Advanced-Lane-Lines.ipynb` in the function `pipeline()`
-
-#### 6. Provide an example image of your result plotted back down onto the road such that the lane area is identified clearly.
-
-I implemented this step in lines # through # in my code in `Advanced-Lane-Lines.ipynb` in the function `measure_radius_of_curvature()`. 
+I did this in the 17th code cell of the IPython notebook in the function `measure_radius_of_curvature()`.
 The formula is the following:
 
 ```
@@ -112,7 +109,10 @@ center_offset_mtrs = xm_per_pix*center_offset_pixels
     
 ```
 
-Here is an example of my result on a test image:
+#### 6. Provide an example image of your result plotted back down onto the road such that the lane area is identified clearly.
+
+I implemented his in the 19th code cell of the IPython notebook in the function `draw_poly()`. 
+
 
 ![alt text][image6]
 
