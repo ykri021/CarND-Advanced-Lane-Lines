@@ -130,8 +130,11 @@ Here's a [link to my video result][video1]
 
 #### 1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
 
+Lane detection failed in the following cases.
 
-- Because it is not possible to detect the lane well on a narrow road, it may be necessary to modify the equations of line prediction.
-- I could not find a lane with a steep curve.
-- On sunny roads, it seems that we have not detected a straight line.
-- Jitter occurred.  
+1. Narrow road
+ - On a narrow road, I could not successfully detect a lane. It is necessary to change so that source and destination can be determined dynamically at perspective transformation.
+2. Sharp curve
+ - I could not detect the lane with a steep curve. It may be solved with more windows.
+
+
