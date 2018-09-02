@@ -135,4 +135,4 @@ Lane detection failed in the following cases.
 1. Narrow road
  - On a narrow road, I could not successfully detect a lane. It is necessary to change so that source and destination can be determined dynamically at perspective transformation.
 2. Sharp curve
- - I could not detect the lane with a steep curve. It may be solved with more windows.
+ - I could not detect the lane with a steep curve. It may be solved with more windows.
